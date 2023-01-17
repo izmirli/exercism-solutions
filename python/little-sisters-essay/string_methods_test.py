@@ -44,3 +44,9 @@ class LittleSistersEssayTest(unittest.TestCase):
     def test_replace_word_not_exist(self):
         self.assertEqual(replace_word_choice("Animals are cool.", "small", "tiny"),
                          "Animals are cool.")
+
+    # not in original tests - added by me due to auto feedback
+    @pytest.mark.task(taskno=5)
+    def test_replace_word_that_also_substring(self):
+        self.assertEqual(replace_word_choice("The cat ate a mouse.", "a", "the"),
+                         "The cat ate the mouse.")
