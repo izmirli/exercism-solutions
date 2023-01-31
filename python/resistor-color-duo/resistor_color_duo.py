@@ -22,10 +22,11 @@ COLOR_VAL = {
     'white': 9
 }
 
+
 def value(colors: list) -> int:
     """Return resistance value according to given colors.
 
-    :param colors: orderd list of colors
+    :param colors: ordered list of colors
     :return: resistance value according to first 2 colors
     """
     return int(f"{COLOR_VAL[colors[0]]}{COLOR_VAL[colors[1]]}")
