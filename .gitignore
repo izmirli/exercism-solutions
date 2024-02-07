@@ -108,3 +108,6 @@ venv.bak/
 
 # exercism
 .exercism/
+
+# Perl lib
+!/perl5/*/lib
